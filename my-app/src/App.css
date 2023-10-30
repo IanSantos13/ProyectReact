@@ -7,6 +7,13 @@
   pointer-events: none;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -26,6 +33,23 @@ nav {
 
 button.Button {
   background: rgb(255, 128, 31);
+}
+
+article {
+  display: flex;
+}
+
+article.CardItem {
+  flex:50%;
+  margin: 10px;
+  border: 5px solid #282c34;
+  flex-direction: column;
+
+}
+
+article.CardItem.Content {
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 @media (prefers-reduced-motion: no-preference) {
