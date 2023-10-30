@@ -6,7 +6,7 @@ const NavBar = () => {
             <h3>Hoyo-commerce</h3>
             <div>
                 <button>Ropa</button>
-                <button>Adornos</button>
+                <button>Auriculares</button>
                 <button>Figuras</button>
             </div>
             <CartWidget />
