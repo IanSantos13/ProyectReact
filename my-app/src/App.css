@@ -7,6 +7,27 @@
   pointer-events: none;
 }
 
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-direction: row;
+  background: aquamarine;
+}
+
+.Controls {
+  display: flex;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+button.Button {
+  background: rgb(255, 128, 31);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
