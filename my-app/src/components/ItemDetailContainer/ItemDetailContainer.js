@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { getProductById } from "../../asyncMock";
 import ItemDetail from "../ItemDetail/ItemDetail";
 
@@ -7,7 +7,7 @@ const ItemDetailContainer = ()=> {
 
     useEffect(() => {
         getProductById("1")
-            .them(response => {
+            .then(response => {
                 setProduct(response)
             })
             .catch(error => {
