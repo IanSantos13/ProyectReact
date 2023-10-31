@@ -14,6 +14,10 @@ body, html {
   font-family: sans-serif;
 }
 
+a.Option {
+  padding: 10px;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
