@@ -1,28 +1,28 @@
 import { useState, useEffect } from "react";
-import { getProductById } from "../../asyncMock";
+import Products from "../json/Products.json";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 
-const ItemDetailContainer = ()=> {
-    const [product, setProduct] = useState(null)
+const ItemDetailContainer = () => {
+  const [item, setItem] = useState([]);
+  const { id } = useParams();
 
-    const { itemId } = useParams()
+  useEffect(() => {
+    const promesa = new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(Products.find((item) => item.id === parseInt(id)));
+      }, 2000);
+    });
+    promesa.then((data) => {
+      setItem(data);
+    });
+  }, [id]);
 
-    useEffect(() => {
-        getProductById(itemId)
-            .then(response => {
-                setProduct(response)
-            })
-            .catch(error => {
-                console.error(error)
-            })
-    }, [itemId])
+  return (
+    <div className="ItemDetailContainer">
+      <ItemDetail item={item} />
+    </div>
+  );
+};
 
-    return(
-        <div className="ItemDetailContainer">
-            <ItemDetail {...product} />
-        </div>
-    )
-}
-
-export default ItemDetailContainer
+export default ItemDetailContainer;

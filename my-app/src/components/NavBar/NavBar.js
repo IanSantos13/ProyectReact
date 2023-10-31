@@ -7,11 +7,17 @@ const NavBar = () => {
             <Link to='/'>
             <h3>Hoyo-commerce</h3>
             </Link>
-            <div className="Categories">
-               <NavLink to={`/category/auriculares`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Auriculares</NavLink>
-               <NavLink to={`/category/ropa`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Ropa</NavLink>
-                <NavLink to={`/category/figuras`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Figuras</NavLink>
-            </div>
+            <ul className="Categories" >
+                <li>
+               <NavLink to="/category/Auriculares">Auriculares</NavLink>
+                </li>
+                <li>
+               <NavLink to="/category/Ropa" >Ropa</NavLink>
+                </li>
+                <li>
+                <NavLink to="/category/Figuras" >Figuras</NavLink>
+                </li>
+            </ul>
             <CartWidget />
         </nav>
     )
