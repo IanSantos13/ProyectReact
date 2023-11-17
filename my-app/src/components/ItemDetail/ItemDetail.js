@@ -1,7 +1,7 @@
 import ItemCount from "../ItemCount/ItemCount";
 
 const ItemDetail = ({ item }) => {
-  return (
+return (
     <article className="CardItem">
       <header className="Header">
         <h2 className="ItemHeader">{item.name}</h2>
@@ -23,6 +23,6 @@ const ItemDetail = ({ item }) => {
       </footer>
     </article>
   );
-};
+}
 
 export default ItemDetail;

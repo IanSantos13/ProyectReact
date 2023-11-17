@@ -1,6 +1,8 @@
-import cart from "./assets/cart.svg"
+import { useContext } from "react"
+import { cartContext } from "../Context/CartContext"
 
 const CartWidget = () => {
+    const {cart} = useContext(cartContext)
     return (
         <div>
             <img src={cart} alt="cart-widget" />
