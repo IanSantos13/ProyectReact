@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useCartContext } from '../hook/useCartContext'
 
 const ItemCount =  ({stock, initial, onAdd})=> {
     const [quantity , setQuantity] = useState(initial)

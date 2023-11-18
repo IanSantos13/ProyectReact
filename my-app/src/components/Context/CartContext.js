@@ -7,8 +7,8 @@ const { Provider } = cartContext
 function CartContextProvider({children}){
     const [cart, setCart] = useState([2,4,5,{key:"valuer"}])
 
-    const addToCart = (product)=>{
-        setCart([...CartContextProvider, product])
+    const addToCart = (stock, initial, onAdd)=>{
+        setCart([...cart, stock, initial, onAdd])
     }
 
     return(
