@@ -6,7 +6,7 @@
     "category": "Auriculares",
     "img": "https://ae01.alicdn.com/kf/S76bcb656a5444cfe9842bfeed2b1f5635/Juego-de-Anime-Honkai-Impact-3-Elysia-auriculares-inal-mbricos-con-Bluetooth-auriculares-plegables-c-modos.jpg_.webp",
     "stock": 15,
-    "description": "Descripcion de Auriculares HI3rd edicion Elysia"
+    "description": "Auriculares Inalambricos, Color Rosa, de la Marca Hoyoverse; Edicion Honkai Impact 3rd Elysia. Disfruta la musica de HoyoMix con la compañía de Eli!"
   },
   {
     "id": 2,
@@ -15,34 +15,34 @@
     "category": "Auriculares",
     "img": "https://ae01.alicdn.com/kf/S74c4bc36e06a4b37a0713bf82d30ee405.jpg_640x640Q90.jpg_.webp",
     "stock": 15,
-    "description": "Descripcion de Auriculares HI3rd edicion Kiana"
+    "description": "Auriculares Inalambricos, Color Anaranjado, de la Marca Hoyoverse; Edicion Honkai Impact 3rd Kiana. Disfruta la musica de HoyoMix con la compañía Kiana!"
   },
   {
     "id": 3,
-    "name": "Chaqueta Kiana Honkai Impact",
+    "name": "Chaqueta Honkai Impact 3rd Edicion Kiana",
     "price": 3000,
     "category": "Ropa",
     "img": "https://down-mx.img.susercontent.com/file/34fd4763728e589955ec9bf2f2a56721",
     "stock": 25,
-    "description": "Descripcion de la Chaqueta Kiana HI"
+    "description": "Chaqueta Frizada, Colores Blanco y Negro, con detalles Anaranjados, de la Marca Hoyoverse; Edicion Honkai Impact 3rd Kiana. Siente el poder de los Kaslana contigo!"
   },
   {
     "id": 4,
-    "name": "Chaqueta Bronya Honkai Impact",
+    "name": "Chaqueta Honkai Impact 3rd Edicion Bronya",
     "price": 4000,
     "category": "Ropa",
     "img": "https://ae01.alicdn.com/kf/S43355ca69eb34c77b6b8b8ba3d272259C/Traje-de-Cosplay-de-juego-Honkai-Impact-3-Bronya-Zaychik-gabardina-larga-chaqueta-de-moda-abrigo.jpg_.webp",
     "stock": 25,
-    "description": "Descripcion de la Chaqueta Bronya HI"
+    "description": "Chaqueta Frizada, Colores Blanco y Negro, con detalles Celestes, de la Marca Hoyoverse; Edicion Honkai Impact 3rd Bronya. Imita la Elegancia de SilverWing y vuelvela tuya!"
   },
   {
     "id": 5,
-    "name": "Figura Herta Honkai Star Rail",
+    "name": "Figura Herta Chibi Honkai Star Rail",
     "price": 3000,
     "category": "Figuras",
     "img": "https://images.squarespace-cdn.com/content/v1/62f1fe2ea8990e69272321f1/1689177833862-O3U7L2CN6DJN5Z5A7OR7/dc1e39de-0d8b-4e25-b070-1fe33f5de039.jpg?format=1000w",
     "stock": 20,
-    "description": "Descripcion de la Figura Herta HSR"
+    "description": "Figura Decorativa de Herta Chibi, de 13,5cm de Alto y 8,5cm de Ancho, de la marca Hoyoverse; Edicion Honkai Star Rail Herta Chibi. ¿Quien no querria tener a nuestra antipatica KuruKuru en su casa?"
   },
   {
     "id": 6,
@@ -51,6 +51,6 @@
     "category": "Figuras",
     "img": "https://ae01.alicdn.com/kf/Se26a10820f3446d399ef3402b13caa96s/MiHoyo-Honkai-Impact-3-1-7-Kiana-Kaslana-Herrscher-Flamescion-Ver-Em-Estoque-PVC-Figuras-de.jpg_.webp",
     "stock": 10,
-    "description": "Descripcion de la Figura Kiana Flamescoin Hi3"
+    "description": "Figura de Acción Kiana Flamescoin Hi3, de 30cm de Alto y 26cm de Ancho, ademas de traer dos espadas una de 19cm y otra de 27cm, de la Marca Hoyoverse; Edicion Honkai Impact 3rd Kiana Flamescoin. Admira la gran determinación de luchar por todo lo bello de nuestra Tuna desde tu habitación"
   }
 ]
