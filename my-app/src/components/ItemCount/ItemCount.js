@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import { useCartContext } from '../hook/useCartContext'
+import React, { useEffect, useState } from "react";
 
-const ItemCount =  ({stock, initial, onAdd})=> {
-    const [quantity , setQuantity] = useState(initial)
 
-    const increment = () => {
-        if (quantity < stock) {
-            setQuantity(quantity + 1)
-        }
-    }
+const ItemCount = ({ initial, stock, onAdd }) => {
+	const [count, setCount] = useState(parseInt(initial));
+	const decrease = () => {
+		setCount(count - 1);
+	};
 
-    const decrement = () => {
-        if (quantity > 1) {
-            setQuantity(quantity - 1)
-        }
-    }
+	const increase = () => {
+		setCount(count + 1);
+	};
 
-    return(
-        <div className="Counter">
-            <div className="Controls">
-                <button className="Button" onClick={decrement}>-</button>
-                <h4 className="Number">{quantity}</h4>
-                <button className="Button" onClick={increment}>+</button>
-            </div>
-            <div>
-                <button className="Button" onClick={() => onAdd(quantity)} disabled={!stock}>
-                    Agregar al carrito
-                </button>
-            </div>
-        </div>
-    )
-}
+	useEffect(() => {
+		setCount(parseInt(initial));
+	}, [initial]);
 
-export default ItemCount
+	return (
+		<div className="Controls">
+			<button disabled={count <= 1} onClick={decrease} className="Button">
+				-
+			</button>
+			<span>{count}</span>
+			<button disabled={count >= stock} onClick={increase} className="Button">
+				+
+			</button>
+			
+			<div>
+				<button disabled={stock <= 0} onClick={() => onAdd(count)} className="Button">
+					Agregar al carrito
+				</button>
+			</div>
+		</div>
+	);
+};
+
+export default ItemCount;

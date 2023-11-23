@@ -10,7 +10,7 @@ return (
         <img src={item.img} alt={item.name} className="ItemImg" />
       </picture>
       <section>
-        <p className="Info">Categoria: {item.category}</p>
+        <p className="Info">Categoria: {item.categoryId}</p>
         <p className="Info">Descripcion: {item.description}</p>
         <p className="Info">Precio: {item.price}</p>
       </section>
