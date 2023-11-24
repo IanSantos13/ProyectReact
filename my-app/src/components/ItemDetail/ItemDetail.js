@@ -1,28 +1,32 @@
-import ItemCount from "../ItemCount/ItemCount";
+import React, {useState} from 'react';
+import ItemCount from '../ItemCount/ItemCount';
+import { Link } from 'react-router-dom';
+import { useCartContext } from '../Context/CartContext';
 
-const ItemDetail = ({ item }) => {
-return (
-    <article className="CardItem">
-      <header className="Header">
-        <h2 className="ItemHeader">{item.name}</h2>
-      </header>
-      <picture>
-        <img src={item.img} alt={item.name} className="ItemImg" />
-      </picture>
-      <section>
-        <p className="Info">Categoria: {item.categoryId}</p>
-        <p className="Info">Descripcion: {item.description}</p>
-        <p className="Info">Precio: {item.price}</p>
-      </section>
-      <footer className="ItemFooter">
-        <ItemCount
-          initial={1}
-          stock={10}
-          onAdd={(quantity) => console.log("Cantidad agregada", quantity)}
-        />
-      </footer>
-    </article>
-  );
+
+const ItemDetail = ({item}) => {
+
+  const[goToCart, setGoToCart] = useState(false);
+  const {addProduct} = useCartContext()
+  const onAdd = (quantity) =>{
+   setGoToCart(true);
+   addProduct(item, quantity);
+  }
+
+  return (
+    <div className>
+     <div className='col-md-4 offset-md-4'>
+        <img src={item.img} className='img-fluid'alt={item.title}/>
+        <h2>{item.title}</h2>
+        <p>{item.description}</p>
+        <p> $ {item.price}</p>
+        <p> Cantidad: {item.stock}</p>
+     </div>
+     <div>
+      {goToCart ? <Link to='/cart'>Terminar compra</Link> :<ItemCount stock={10} initial={0} onAdd={onAdd} />}
+     </div>
+     </div>
+  )
 }
 
-export default ItemDetail;
+export default ItemDetail
