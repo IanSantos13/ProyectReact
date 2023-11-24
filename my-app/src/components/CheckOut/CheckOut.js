@@ -42,7 +42,6 @@ export const Checkout = () => {
     try {
       const db = getFirestore();
 
-      // Update stock for each product in the order
       await Promise.all(
         order.items.map(async (productOrder) => {
           const productRef = doc(db, 'products', productOrder.id);
@@ -55,14 +54,11 @@ export const Checkout = () => {
         })
       );
 
-      // Add the order to the "orders" collection
       const orderRef = await addDoc(collection(db, 'orders'), order);
       setOrderId(orderRef.id);
 
-      // Remove products from the cart after a successful purchase
       removeProduct();
 
-      // Clear the form fields
       setName('');
       setPhone('');
       setEmail('');
